@@ -32,10 +32,17 @@ var makeMove = function () {
   xCurPos =  parseInt(prompt("PIECE to move, ROW (0-7): "), 10);
   if(xCurPos){
     yCurPos = parseInt(prompt("PIECE to move, COLUMN (0-7): "), 10);
+    
+    //tag current position with asterisk and show on board
+    //board[xCurPos][yCurPos] = board[xCurPos][yCurPos] + "*";
+    //showBoard();
   }
+
   if(xCurPos && yCurPos){
     xNewPos = tempXPos = parseInt(prompt("WHERE to move, ROW (0-7): "), 10);
   yNewPos = tempYPos = parseInt(prompt("WHERE to move, COLUMN (0-7): "), 10);
+    
+    //remove asterisk tag
   }
   // if positions are entered then move piece
   if(xCurPos && yCurPos && xNewPos && yNewPos){
